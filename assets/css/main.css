@@ -396,7 +396,13 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .footer .container .f-form form .form-label {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .footer .container .f-form form {
     margin-left: 0;
   }
@@ -504,6 +510,18 @@ body {
   line-height: 20px;
   letter-spacing: -.204545px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .wrapper .footer-wrap-menu .f-menu {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .footer .wrapper .footer-wrap-menu .f-menu {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 992px) {
