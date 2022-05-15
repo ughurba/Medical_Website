@@ -300,3 +300,80 @@ body {
 
 
 }
+
+
+
+.main{
+
+    .container{
+
+        .filter {
+            display: flex;
+            align-items: center;
+            background: #047eb3;
+            border-radius: 8px;
+            padding: 18px 24px;
+            margin-bottom: 30px;
+            margin-top: 26px;
+            .title {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #fff;
+                margin: 0;
+            }
+        }
+
+        .main-boxs {
+            .cards {
+                display: flex;
+                
+            
+                .main-box {
+                  
+                    border: 1px solid hsla(0,0%,94.5%,.54);
+                    box-sizing: border-box;
+                   
+                    border-radius: 8px;
+                   
+                    width: calc(33.33333% - 40px);
+                    margin: 0 16px 32px;
+                    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                     
+                   img{
+                       border-radius: 8px;
+                   }
+                    .main-box-body {
+                        padding: 16px 24px;
+                        .main-box-title{
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #00415c;
+                            margin-bottom: 4px;
+                        }
+                        p{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #00415c;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
