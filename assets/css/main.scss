@@ -326,23 +326,26 @@ body {
 
         .main-boxs {
             .cards {
-                display: flex;
+                display: flex; 
+                cursor: pointer;
+                flex-wrap: wrap;
+
                 
-            
                 .main-box {
-                  
-                    border: 1px solid hsla(0,0%,94.5%,.54);
                     box-sizing: border-box;
-                   
-                    border-radius: 8px;
-                   
+                    border-radius: 10px;
                     width: calc(33.33333% - 40px);
                     margin: 0 16px 32px;
                     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
                      
                    img{
                        border-radius: 8px;
+                       width: 100%;
+                       object-fit: cover;
                    }
+
+            
+
                     .main-box-body {
                         padding: 16px 24px;
                         .main-box-title{
@@ -361,8 +364,18 @@ body {
                     }
 
                 }
+               
+                @media screen and (max-width:992px) {
+                    .main-box{
+                        
+                        flex: 0 1 100%;
+                        
+                    }
+                    
+                }
 
             }
+          
         }
 
 
