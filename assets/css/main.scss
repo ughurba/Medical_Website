@@ -14,6 +14,20 @@ body {
     padding-top: 20px;
     background: #047eb3;
     position: relative;
+    .body-mask.active{
+        display: block;
+    }
+    .body-mask{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.3);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+       
+    }
 
     .line {
         width: 100%;
@@ -37,6 +51,45 @@ body {
                     display: none;
                     border: none;
                     background: 0 0;
+
+                    .ham-list.active{
+                        display: block;
+                        z-index: 10;
+                    }
+                    .ham-list {
+                        padding: 20px;
+                        position: absolute;
+                        top: 150px;
+                        left: 350px;
+                        background: #fff;
+                        display: none;
+                        .ham-item {
+                            list-style: none;
+                            margin-right: 0;
+                            width: 100%;
+                            padding: 20px 250px 0px 0px;
+
+                            .ham-link {
+                                color: #00415c;
+                                padding: 16px 32px;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                display: block;
+                                padding: 0 0 16px;
+                                
+                            }
+                        }
+
+                    }
+                   
+                  
+
+
+
+
+
                 }
 
                 .search {
@@ -251,13 +304,29 @@ body {
                         padding: 0 0 16px;
                     }
                 }
+                .sub-menu:hover .drop-down{
+                    display: block;
+                    
 
+                    
+                }
                 .sub-menu {
                     position: relative;
 
+                    .drop-down::after{
+                        content: ''; 
+                        position: absolute;
+                        left: 40px;
+                        top: -20px; 
+                        border: 10px solid transparent; 
+                        border-bottom: 10px solid white;
+                       
+                        
+                       
+                    }
                     .drop-down {
                         position: absolute;
-                        top: 30px;
+                        top: 38px;
                         left: -25px;
                         background: #fff;
                         display: none;
@@ -266,6 +335,9 @@ body {
                         z-index: 2;
                         min-width: 200px;
 
+                        
+                        
+
                         .sub-menu-link {
                             font-size: 16px;
                             line-height: 24px;
@@ -273,6 +345,7 @@ body {
                             padding: 10px;
                             display: block;
                             text-decoration: none;
+                            
                         }
 
                     }
